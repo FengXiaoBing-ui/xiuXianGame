@@ -1,11 +1,12 @@
 import Vuex from "vuex";
+import npc from "./npc.js"
 
 const store = new Vuex.Store({
 	modules:{
-		
+		npc
 	},
 	state:{
-		userInfo:null,
+		userInfo:{},
 		system:null
 	},
 	mutations:{

@@ -14,11 +14,13 @@ app.$mount()
 // #ifdef VUE3
 import { createSSRApp } from 'vue'
 import store from "@/store/index.js";
+import createNpc from "@/util/npc.js"
 
 export function createApp() {
   const app = createSSRApp(App)
   
   app.config.globalProperties.store = store
+  app.config.globalProperties.createNpc = createNpc
   
   app.use(store)
   

@@ -3,7 +3,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "老王修仙"
+				"navigationStyle": "custom"
 			}
 		}
 	    ,{

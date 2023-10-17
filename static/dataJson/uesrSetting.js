@@ -48,31 +48,82 @@ const sect = [
 
 const fate = [
   {
-	  name:"气运1"
+	  name:"先天抗揍",
+	  healthValue:20,//血量
+	  energy:0,//法力值
+	  attackCount:0,//攻击力
+	  defense:20,//防御力
+	  linggen:[],//灵根
+	  talent:0//悟性
   },
   {
-  	  name:"气运2"
+  	  name:"武痴附体",
+	  healthValue:0,//血量
+	  energy:0,//法力值
+	  attackCount:20,//攻击力
+	  defense:20,//防御力
+	  linggen:[],//灵根
+	  talent:0//悟性
   },
   {
-  	  name:"气运3"
+  	  name:"天生慧根",
+	  healthValue:0,//血量
+	  energy:20,//法力值
+	  attackCount:0,//攻击力
+	  defense:0,//防御力
+	  linggen:[],//灵根
+	  talent:10//悟性
   },
   {
-  	  name:"气运4"
+  	  name:"火耀灵体",
+	  healthValue:0,//血量
+	  energy:0,//法力值
+	  attackCount:0,//攻击力
+	  defense:0,//防御力
+	  linggen:['火灵根'],//灵根
+	  talent:0//悟性
   },
   {
-  	  name:"气运5"
+  	  name:"北域风神灵体",
+	  healthValue:0,//血量
+	  energy:0,//法力值
+	  attackCount:0,//攻击力
+	  defense:0,//防御力
+	  linggen:['风灵根'],//灵根
+	  talent:0//悟性
   },
   {
-  	  name:"气运6"
-  },
-  {
-  	  name:"气运7"
+  	  name:"先天道体",
+	  healthValue:0,//血量
+	  energy:0,//法力值
+	  attackCount:0,//攻击力
+	  defense:0,//防御力
+	  linggen:['风灵根'],//灵根
+	  talent:20//悟性
   }
 ]
 
+const linggen = [
+	{
+		name:"水灵根"
+	},
+	{
+		name:"木灵根"
+	},
+	{
+		name:"土灵根"
+	},
+	{
+		name:"金灵根"
+	},
+	{
+		name:"火灵根"
+	}
+]
 
 export default {
 	family,
 	sect,
-	fate
+	fate,
+	linggen
 }
