@@ -1,5 +1,10 @@
 const family = [
-  {id:'1',city:'深圳'}, {id:'2',city:'广州'},
+  {
+	  name:"王家",
+  },
+  {
+  	  name:"付家",
+  },
 ]
 
 export default {
