@@ -52,7 +52,7 @@ const fate = [
 	  healthValue:20,//血量
 	  energy:0,//法力值
 	  attackCount:0,//攻击力
-	  defense:20,//防御力
+	  defense:10,//防御力
 	  linggen:[],//灵根
 	  talent:0//悟性
   },
@@ -61,7 +61,7 @@ const fate = [
 	  healthValue:0,//血量
 	  energy:0,//法力值
 	  attackCount:20,//攻击力
-	  defense:20,//防御力
+	  defense:10,//防御力
 	  linggen:[],//灵根
 	  talent:0//悟性
   },
@@ -121,9 +121,58 @@ const linggen = [
 	}
 ]
 
+const martialTechnique = [
+	{
+		name:"白云出岫",
+		attackCount:30,
+		energy:20
+	},
+	{
+		name:"白虹贯日",
+		attackCount:25,
+		energy:10
+	},
+	{
+		name:"云断秦岭",
+		attackCount:18,
+		energy:5
+	},
+	{
+		name:"青松翠翠",
+		attackCount:22,
+		energy:8
+	},
+	{
+		name:"天绅倒悬",
+		attackCount:20,
+		energy:10
+	},
+	{
+		name:"独孤九剑一式",
+		attackCount:30,
+		energy:16
+	},
+	{
+		name:"独孤九剑二式",
+		attackCount:35,
+		energy:20
+	},
+	{
+		name:"独孤九剑三式",
+		attackCount:40,
+		energy:25
+	},
+	{
+		name:"独孤九剑四式",
+		attackCount:50,
+		energy:30
+	}
+]
+
 export default {
 	family,
 	sect,
 	fate,
-	linggen
+	linggen,
+	martialTechnique
 }

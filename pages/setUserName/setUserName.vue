@@ -21,8 +21,8 @@
 			<view class="margin-xs">防御力：{{ userInfo.defense }}</view>
 			<!-- <view class="margin-xs">灵根：{{ userInfo.linggen }}</view> -->
 			<view class="margin-xs">悟性：{{ userInfo.talent }}</view>
-			<view class="margin-xs">气运：{{ userInfo.fate.name }}</view>
-			<view class="margin-xs">门派：{{ userInfo.sect.name }}</view>
+			<view class="margin-xs">气运：{{ userInfo.fate?.name }}</view>
+			<view class="margin-xs">门派：{{ userInfo.sect?.name }}</view>
 		</view>
 	</view>
 </template>
@@ -35,9 +35,9 @@
 	import uesrSetting from "/static/dataJson/uesrSetting.js"
 	
 	const healthValue = 100;//血量
-	const energy = 10;//法力值
+	const energy = 100;//法力值
 	const attackCount = 10;//攻击力
-	const defense = 10;//防御力
+	const defense = 5;//防御力
 	const talent = 10;//悟性
 	
 	export default {
@@ -47,7 +47,8 @@
 				uesrSetting: null,
 				fate:null,
 				sect:null,
-				linggen:null
+				linggen:null,
+				martialTechnique:null
 			}
 		},
 		computed: {
@@ -64,7 +65,12 @@
 		methods: {
 			...mapMutations(["SET_USERINFO"]),
 			createOk() {
-				let npc = new this.createNpc({
+				let martialTechnique = []
+				for (var i = 0; i < Math.ceil(Math.random()*uesrSetting.martialTechnique.length); i++) {
+					martialTechnique.push(uesrSetting.martialTechnique[i])
+				}
+				let player = new this.createNpc({
+					userId:1,
 					userName:this.userName,
 					healthValue:healthValue+this.fate.healthValue,
 					energy:energy+this.fate.energy,
@@ -73,13 +79,14 @@
 					linggen:['天灵根'],
 					talent:talent+this.fate.talent,
 					fate:this.fate,
-					sect:this.sect
+					sect:this.sect,
+					martialTechnique
 				})
-				console.log(npc);
-				this.SET_USERINFO(npc)
-				// uni.redirectTo({
-				// 	url: "/pages/index/index"
-				// })
+				console.log(player);
+				this.SET_USERINFO(player)
+				uni.redirectTo({
+					url: "/pages/index/index"
+				})
 			}
 		}
 	}

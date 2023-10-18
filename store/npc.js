@@ -8,7 +8,11 @@ export default {
 			state.npcList.push(val)
 		},
 		MODIFY_NPC_LIST(state,val){
-			state.npcList[0] = val
+			state.npcList.forEach((item,index) => {
+				if(item.userId==val.userId){
+					state.npcList[index] = val
+				}
+			})
 		}
     },
     actions: {},
