@@ -169,6 +169,7 @@ const martialTechnique = [
 	}
 ]
 
+
 export default {
 	family,
 	sect,

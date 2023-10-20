@@ -1,12 +1,11 @@
 <template>
-	<view style="width: 100vw;min-height: 100vh;" class="padding-sm">
-		
-		<view class="flex flex-wrap">
+	<view style="width: 100vw;min-height: 100vh;padding-top:100rpx;" class="padding-sm">
+		<view class="flex flex-wrap" v-if="uesrSetting">
 			<view class="margin-right-sm margin-bottom-sm radius padding-xs" :class="fate.name==item.name?'bg-orange':''" style="border: 1rpx solid gray;"
 				@click="fate = item" v-for="(item,index) in uesrSetting.fate" :key="index">{{ item.name }}</view>
 		</view>
 		
-		<view class="flex flex-wrap">
+		<view class="flex flex-wrap" v-if="uesrSetting">
 			<view class="margin-right-sm margin-bottom-sm radius padding-xs" :class="sect.name==item.name?'bg-orange':''" style="border: 1rpx solid gray;"
 				@click="sect = item" v-for="(item,index) in uesrSetting.sect" :key="index">{{ item.name }}</view>
 		</view>
@@ -80,7 +79,15 @@
 					talent:talent+this.fate.talent,
 					fate:this.fate,
 					sect:this.sect,
-					martialTechnique
+					martialTechnique,
+					relationship:[],
+					grade:{
+						name:"练气一层",
+						healthValue:20,
+						energy:20,
+						attackCount:20,
+						defense:20
+					}
 				})
 				console.log(player);
 				this.SET_USERINFO(player)

@@ -17,8 +17,8 @@
 			<view class="margin-xs">防御力：{{ userInfo.defense }}</view>
 			<!-- <view class="margin-xs">灵根：{{ userInfo.linggen[0] }}</view> -->
 			<view class="margin-xs">悟性：{{ userInfo.talent }}</view>
-			<view class="margin-xs">气运：{{ userInfo.fate.name }}</view>
-			<view class="margin-xs">门派：{{ userInfo.sect.name }}</view>
+			<view class="margin-xs">气运：{{ userInfo.fate?.name }}</view>
+			<view class="margin-xs">门派：{{ userInfo.sect?.name }}</view>
 		</view>
 	</view>
 </template>
