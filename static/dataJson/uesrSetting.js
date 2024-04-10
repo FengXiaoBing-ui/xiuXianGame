@@ -46,81 +46,6 @@ const sect = [
   }
 ]
 
-const fate = [
-  {
-	  name:"先天抗揍",
-	  healthValue:20,//血量
-	  energy:0,//法力值
-	  attackCount:0,//攻击力
-	  defense:10,//防御力
-	  linggen:[],//灵根
-	  talent:0//悟性
-  },
-  {
-  	  name:"武痴附体",
-	  healthValue:0,//血量
-	  energy:0,//法力值
-	  attackCount:20,//攻击力
-	  defense:10,//防御力
-	  linggen:[],//灵根
-	  talent:0//悟性
-  },
-  {
-  	  name:"天生慧根",
-	  healthValue:0,//血量
-	  energy:20,//法力值
-	  attackCount:0,//攻击力
-	  defense:0,//防御力
-	  linggen:[],//灵根
-	  talent:10//悟性
-  },
-  {
-  	  name:"火耀灵体",
-	  healthValue:0,//血量
-	  energy:0,//法力值
-	  attackCount:0,//攻击力
-	  defense:0,//防御力
-	  linggen:['火灵根'],//灵根
-	  talent:0//悟性
-  },
-  {
-  	  name:"北域风神灵体",
-	  healthValue:0,//血量
-	  energy:0,//法力值
-	  attackCount:0,//攻击力
-	  defense:0,//防御力
-	  linggen:['风灵根'],//灵根
-	  talent:0//悟性
-  },
-  {
-  	  name:"先天道体",
-	  healthValue:0,//血量
-	  energy:0,//法力值
-	  attackCount:0,//攻击力
-	  defense:0,//防御力
-	  linggen:['风灵根'],//灵根
-	  talent:20//悟性
-  }
-]
-
-const linggen = [
-	{
-		name:"水灵根"
-	},
-	{
-		name:"木灵根"
-	},
-	{
-		name:"土灵根"
-	},
-	{
-		name:"金灵根"
-	},
-	{
-		name:"火灵根"
-	}
-]
-
 const martialTechnique = [
 	{
 		name:"白云出岫",
@@ -169,11 +94,224 @@ const martialTechnique = [
 	}
 ]
 
+const roleSet = [
+	{
+		name:"天谴之人",
+		talentPoints:-5,
+	},
+	{
+		name:"凡人修真",
+		talentPoints:0,
+	},
+	{
+		name:"颇有家资",
+		talentPoints:10,
+	},
+	{
+		name:"我是主角",
+		talentPoints:15,
+	},
+	{
+		name:"天命神子",
+		talentPoints:20,
+	}
+]
+
+const birth = [
+	{
+		name:"孑然一身",
+		type:"healthValue",
+		count:-15,
+		talentPoints:-1
+	},
+	{
+		name:"芸芸众生",
+		type:null,
+		count:0,
+		talentPoints:0
+	},
+	{
+		name:"武学世家",
+		type:"healthValue",
+		count:10,
+		talentPoints:1
+	},
+	{
+		name:"家财万贯",
+		type:"money",
+		count:2000,
+		talentPoints:1
+	},
+	{
+		name:"异世穿越",
+		type:"consciousness",
+		count:5,
+		talentPoints:-1
+	},
+	{
+		name:"修仙世家",
+		type:"gongFa",
+		gongFaId:{
+			id:1,
+			name:"锻体决"
+		},
+		count:0,
+		talentPoints:-2
+	},
+	{
+		name:"世代书香",
+		type:"wuXing",
+		count:15,
+		talentPoints:-2
+	}
+]
+
+const qualification = [
+	{
+		name:"伪灵根",
+		talentPoints:0,
+		qualificationCount:10
+	},
+	{
+		name:"四灵根",
+		talentPoints:1,
+		qualificationCount:20
+	},
+	{
+		name:"三灵根",
+		talentPoints:4,
+		qualificationCount:40
+	},
+	{
+		name:"双灵根",
+		talentPoints:8,
+		qualificationCount:80
+	},
+	{
+		name:"地灵根",
+		talentPoints:10,
+		qualificationCount:120
+	},
+	{
+		name:"天灵根",
+		talentPoints:14,
+		qualificationCount:160
+	}
+]
+
+const linggen = [
+	{
+		name:"水灵根",
+		Markup:0,
+		count:10
+	},
+	{
+		name:"木灵根",
+		Markup:0,
+		count:10
+	},
+	{
+		name:"土灵根",
+		Markup:0,
+		count:10
+	},
+	{
+		name:"金灵根",
+		Markup:0,
+		count:10
+	},
+	{
+		name:"火灵根",
+		Markup:0,
+		count:10
+	}
+]
+
+const fate = [
+	{
+		name:"孱弱多病",
+		type:"healthValue",
+		count:-20,
+		talentPoints:-6
+	},
+	{
+		name:"经脉闭塞",
+		type:"qualificationCount",
+		count:-20,
+		talentPoints:-3
+	},
+	{
+		name:"一介凡人",
+		type:null,
+		count:0,
+		talentPoints:0
+	},
+	{
+		name:"木乙灵体",
+		type:"linggen",
+		id:1,
+		count:10,
+		talentPoints:2
+	},
+	{
+		name:"水灵之体",
+		type:"linggen",
+		id:1,
+		count:10,
+		talentPoints:2
+	},
+	{
+		name:"火耀之体",
+		type:"linggen",
+		id:1,
+		count:10,
+		talentPoints:2
+	},
+	{
+		name:"庚金之体",
+		type:"linggen",
+		id:1,
+		count:10,
+		talentPoints:2
+	},
+	{
+		name:"厚土之体",
+		type:"linggen",
+		id:1,
+		count:10,
+		talentPoints:2
+	},
+	{
+		name:"先天道体",
+		type:"qualification",
+		count:20,
+		unit:"%",
+		talentPoints:6
+	}
+]
+
+const Cheats = [
+	{
+		name:"神秘绿瓶",
+		text:"每天自动生成五滴灵液，可以催熟灵药"
+	},
+	{
+		name:"神秘口袋",
+		text:"融入灵兽精血，该灵兽自动收入口袋，成为你的灵兽"
+	},
+	{
+		name:"神秘空间",
+		text:"消耗一定灵力值，进入神秘空间，不论时间流逝多久，外界时间不变"
+	}
+]
 
 export default {
 	family,
 	sect,
 	fate,
 	linggen,
-	martialTechnique
+	martialTechnique,
+	qualification,
+	birth,
+	roleSet
 }

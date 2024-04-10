@@ -18,6 +18,7 @@ export default {
 		let fate = uesrSetting.fate[Math.floor(Math.random()*uesrSetting.fate.length)]
 		let linggen = uesrSetting.linggen[Math.floor(Math.random()*uesrSetting.linggen.length)]
 		
+		//给武技随机排序
 		let martialTechnique = []
 		var set = new Set();
 		var numCount = Math.ceil(Math.random()*(uesrSetting.martialTechnique.length-1));
