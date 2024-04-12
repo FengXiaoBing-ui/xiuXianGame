@@ -12,7 +12,37 @@
             {
                 "navigationStyle": "custom"
             }
-            
+        },
+		{
+			"path" : "pages/my/my",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/goods/goods",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+        {
+        	"path" : "pages/find/find",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "",
+        		"enablePullDownRefresh" : false
+        	}
+        },
+        {
+        	"path" : "pages/reincarnation/reincarnation",
+        	"style" : 
+        	{
+        	    "navigationStyle": "custom"
+        	}
         }
     ],
 	"globalStyle": {
@@ -20,5 +50,29 @@
 		"navigationBarTitleText": "修仙",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#000000",
+		"selectedColor":"#08C261",
+		"borderStyle":"black",
+		"backgroundColor":"#F7F7F7",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"世界"
+			},
+			{
+				"pagePath":"pages/goods/goods",
+				"text":"物品"
+			},
+			{
+				"pagePath":"pages/find/find",
+				"text":"发现"
+			},
+			{
+				"pagePath":"pages/my/my",
+				"text":"我的"
+			}
+		]
 	}
 }

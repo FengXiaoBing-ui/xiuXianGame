@@ -2,15 +2,18 @@ import store from "@/store/index.js";
 class createNpc {
 	constructor(arg) {
 		//npc的属性有 名字，血量，气运，门派，攻击力，护甲，法抗，移动速度，灵根，
+		this.createTime = arg.createTime
 		this.userId = arg.userId;//ID
 		this.userName = arg.userName;//名字
-		this.healthValue = arg.healthValue;//血量
-		this.energy = arg.energy;//法力值
-		this.attackCount = arg.attackCount;//攻击力
-		this.defense = arg.defense;//防御力
-		this.linggen = arg.linggen;//灵根
-		this.talent  = arg.talent;//悟性
+		this.qualification = arg.qualification;//资质/修炼速度
 		this.fate = arg.fate;//气运
+		
+		this.attribute = arg.attribute
+		this.lingen = arg.lingen
+		this.birth = arg.birth
+		this.roleSet = arg.roleSet
+		this.grade = arg.grade
+		
 		this.sect = arg.sect;//门派
 		this.martialTechnique = arg.martialTechnique;//武技
 	}

@@ -1,292 +1,215 @@
-const family = [
-  {
-	  name:"世家1"
-  },
-  {
-  	  name:"世家2"
-  },
-  {
-  	  name:"世家3"
-  },
-  {
-  	  name:"世家4"
-  },
-  {
-  	  name:"世家5"
-  },
-  {
-  	  name:"世家6"
-  },
-  {
-  	  name:"世家7"
-  }
-]
-
-const sect = [
-  {
-	  name:"门派1"
-  },
-  {
-  	  name:"门派2"
-  },
-  {
-  	  name:"门派3"
-  },
-  {
-  	  name:"门派4"
-  },
-  {
-  	  name:"门派5"
-  },
-  {
-  	  name:"门派6"
-  },
-  {
-  	  name:"门派7"
-  }
-]
-
-const martialTechnique = [
-	{
-		name:"白云出岫",
-		attackCount:30,
-		energy:20
-	},
-	{
-		name:"白虹贯日",
-		attackCount:25,
-		energy:10
-	},
-	{
-		name:"云断秦岭",
-		attackCount:18,
-		energy:5
-	},
-	{
-		name:"青松翠翠",
-		attackCount:22,
-		energy:8
-	},
-	{
-		name:"天绅倒悬",
-		attackCount:20,
-		energy:10
-	},
-	{
-		name:"独孤九剑一式",
-		attackCount:30,
-		energy:16
-	},
-	{
-		name:"独孤九剑二式",
-		attackCount:35,
-		energy:20
-	},
-	{
-		name:"独孤九剑三式",
-		attackCount:40,
-		energy:25
-	},
-	{
-		name:"独孤九剑四式",
-		attackCount:50,
-		energy:30
-	}
-]
-
 const roleSet = [
 	{
+		id:100,
 		name:"天谴之人",
 		talentPoints:-5,
 	},
 	{
+		id:101,
 		name:"凡人修真",
 		talentPoints:0,
 	},
 	{
+		id:102,
 		name:"颇有家资",
+		talentPoints:5,
+	},
+	{
+		id:103,
+		name:"我是主角",
 		talentPoints:10,
 	},
 	{
-		name:"我是主角",
-		talentPoints:15,
-	},
-	{
+		id:104,
 		name:"天命神子",
-		talentPoints:20,
+		talentPoints:15,
 	}
 ]
 
 const birth = [
 	{
+		id:1000,
 		name:"孑然一身",
 		type:"healthValue",
 		count:-15,
 		talentPoints:-1
 	},
 	{
+		id:1001,
 		name:"芸芸众生",
 		type:null,
 		count:0,
 		talentPoints:0
 	},
 	{
+		id:1002,
 		name:"武学世家",
 		type:"healthValue",
 		count:10,
 		talentPoints:1
 	},
 	{
+		id:1003,
 		name:"家财万贯",
 		type:"money",
 		count:2000,
 		talentPoints:1
 	},
 	{
+		id:1004,
 		name:"异世穿越",
 		type:"consciousness",
 		count:5,
-		talentPoints:-1
+		talentPoints:1
 	},
 	{
+		id:1005,
 		name:"修仙世家",
 		type:"gongFa",
 		gongFaId:{
-			id:1,
+			id:10000,
 			name:"锻体决"
 		},
 		count:0,
-		talentPoints:-2
+		talentPoints:2
 	},
 	{
+		id:1006,
 		name:"世代书香",
 		type:"wuXing",
 		count:15,
-		talentPoints:-2
+		talentPoints:2
 	}
 ]
 
 const qualification = [
 	{
+		id:2000,
 		name:"伪灵根",
 		talentPoints:0,
-		qualificationCount:10
+		count:10,
+		type:"qualification",
+		choiceCount:5
 	},
 	{
+		id:2001,
 		name:"四灵根",
 		talentPoints:1,
-		qualificationCount:20
+		count:20,
+		type:"qualification",
+		choiceCount:4
 	},
 	{
+		id:2002,
 		name:"三灵根",
 		talentPoints:4,
-		qualificationCount:40
+		count:40,
+		type:"qualification",
+		choiceCount:3
 	},
 	{
+		id:2003,
 		name:"双灵根",
 		talentPoints:8,
-		qualificationCount:80
+		count:80,
+		type:"qualification",
+		choiceCount:2
 	},
 	{
-		name:"地灵根",
-		talentPoints:10,
-		qualificationCount:120
-	},
-	{
+		id:2004,
 		name:"天灵根",
 		talentPoints:14,
-		qualificationCount:160
+		count:160,
+		type:"qualification",
+		choiceCount:1
 	}
 ]
 
 const linggen = [
 	{
+		id:3000,
 		name:"水灵根",
 		Markup:0,
-		count:10
+		count:10,
+		choice:false
 	},
 	{
+		id:3001,
 		name:"木灵根",
 		Markup:0,
-		count:10
+		count:10,
+		choice:false
 	},
 	{
+		id:3002,
 		name:"土灵根",
 		Markup:0,
-		count:10
+		count:10,
+		choice:false
 	},
 	{
+		id:3003,
 		name:"金灵根",
 		Markup:0,
-		count:10
+		count:10,
+		choice:false
 	},
 	{
+		id:3004,
 		name:"火灵根",
 		Markup:0,
-		count:10
+		count:10,
+		choice:false
 	}
 ]
 
 const fate = [
 	{
-		name:"孱弱多病",
-		type:"healthValue",
-		count:-20,
-		talentPoints:-6
-	},
-	{
-		name:"经脉闭塞",
-		type:"qualificationCount",
-		count:-20,
-		talentPoints:-3
-	},
-	{
+		id:4002,
 		name:"一介凡人",
 		type:null,
 		count:0,
 		talentPoints:0
 	},
 	{
+		id:4004,
+		name:"玄水灵体",
+		type:"linggen",
+		linggenId:3000,
+		count:10,
+		talentPoints:2
+	},
+	{
+		id:4003,
 		name:"木乙灵体",
 		type:"linggen",
-		id:1,
+		linggenId:3001,
 		count:10,
 		talentPoints:2
 	},
 	{
-		name:"水灵之体",
+		id:4007,
+		name:"厚土灵体",
 		type:"linggen",
-		id:1,
+		linggenId:3002,
 		count:10,
 		talentPoints:2
 	},
 	{
-		name:"火耀之体",
+		id:4006,
+		name:"庚金灵体",
 		type:"linggen",
-		id:1,
+		linggenId:3003,
 		count:10,
 		talentPoints:2
 	},
 	{
-		name:"庚金之体",
+		id:4005,
+		name:"火耀灵体",
 		type:"linggen",
-		id:1,
+		linggenId:3004,
 		count:10,
 		talentPoints:2
-	},
-	{
-		name:"厚土之体",
-		type:"linggen",
-		id:1,
-		count:10,
-		talentPoints:2
-	},
-	{
-		name:"先天道体",
-		type:"qualification",
-		count:20,
-		unit:"%",
-		talentPoints:6
 	}
 ]
 
@@ -306,11 +229,8 @@ const Cheats = [
 ]
 
 export default {
-	family,
-	sect,
 	fate,
 	linggen,
-	martialTechnique,
 	qualification,
 	birth,
 	roleSet

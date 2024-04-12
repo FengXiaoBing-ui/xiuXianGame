@@ -3,6 +3,13 @@
 	export default {
 		onLaunch: function() {
 			console.log('App Launch')
+			if(uni.getStorageSync('archive')){
+				store.commit('SET_USERINFO',uni.getStorageSync('archive'))
+			}else{
+				uni.navigateTo({
+					url: "/pages/setUserName/setUserName"
+				})
+			}
 		},
 		onShow: function() {
 			console.log('App Show')
