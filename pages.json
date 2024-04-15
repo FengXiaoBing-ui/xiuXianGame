@@ -5,6 +5,22 @@
 			"style": {
 				"navigationStyle": "custom"
 			}
+		},
+		{
+			"path" : "pages/index/transfer",
+			"style" : 
+			{
+				"navigationBarTitleText" : "选择传送地点",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/index/market",
+			"style" : 
+			{
+				"navigationBarTitleText" : "坊市",
+				"enablePullDownRefresh" : false
+			}
 		}
 	    ,{
             "path" : "pages/setUserName/setUserName",
@@ -41,7 +57,8 @@
         	"path" : "pages/reincarnation/reincarnation",
         	"style" : 
         	{
-        	    "navigationStyle": "custom"
+        		"navigationBarTitleText" : "转世投胎",
+        		"enablePullDownRefresh" : false
         	}
         }
     ],

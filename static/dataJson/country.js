@@ -2,27 +2,78 @@ const country = [
 	{
 		id:"country-100",
 		name:"魏国",
-		cityId:["city-100"]
+		capital:"许昌",
+		cityId:["city-100"],
+		transferTerms:{
+			goodOpinion:50,
+			money:10
+		},
+		market:true,//坊市
+		auction:true,//拍卖会
+		auctionTime:"",//拍卖会时间
+		Inn:true,//客栈
+		task:true,//任务
 	},
 	{
 		id:"country-101",
-		name:"梁国",
-		cityId:["city-101"]
+		name:"北齐",
+		capital:"北京",
+		cityId:["city-104","city-105"],
+		transferTerms:{
+			goodOpinion:50,
+			money:10
+		},
+		market:true,//坊市
+		auction:true,//拍卖会
+		auctionTime:"",//拍卖会时间
+		Inn:true,//客栈
+		task:true,//任务
 	},
 	{
 		id:"country-102",
-		name:"北周",
-		cityId:["city-102"]
+		name:"梁国",
+		capital:"汴梁",
+		cityId:["city-101"],
+		transferTerms:{
+			goodOpinion:50,
+			money:10
+		},
+		market:true,//坊市
+		auction:true,//拍卖会
+		auctionTime:"",//拍卖会时间
+		Inn:true,//客栈
+		task:true,//任务
 	},
 	{
 		id:"country-103",
-		name:"西汉",
-		cityId:["city-103"]
+		name:"北周",
+		capital:"洛阳",
+		cityId:["city-102"],
+		transferTerms:{
+			goodOpinion:50,
+			money:10
+		},
+		market:true,//坊市
+		auction:true,//拍卖会
+		auctionTime:"",//拍卖会时间
+		Inn:true,//客栈
+		task:true,//任务
 	},
 	{
 		id:"country-104",
-		name:"北齐",
-		cityId:["city-104","city-105"]
-	}
+		name:"西汉",
+		capital:"咸阳",
+		cityId:["city-103"],
+		transferTerms:{
+			goodOpinion:50,
+			money:10
+		},
+		market:true,//坊市
+		auction:true,//拍卖会
+		auctionTime:"",//拍卖会时间
+		Inn:true,//客栈
+		task:true,//任务
+	},
+	
 ]
 export default country

@@ -1,5 +1,5 @@
 <template>
-	<view class="radius" :class="{'normal-box':level==1,'rare-box':level==2,'epic-box':level==3,'legend-box':level==4,'god-box':level==5}">
+	<view class="radius" style="position: relative;" :class="{'normal-box':level==1,'rare-box':level==2,'epic-box':level==3,'legend-box':level==4,'god-box':level==5}">
 		<slot></slot>
 	</view>
 </template>
