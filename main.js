@@ -17,8 +17,12 @@ import store from "@/store/index.js";
 import createNpc from "@/util/npc.js"
 import tool from "@/util/tool.js"
 
+import levelBox from "@/components/levelBox.vue"
+
 export function createApp() {
   const app = createSSRApp(App)
+  
+  app.component('levelBox',levelBox);
   
   app.config.globalProperties.store = store
   app.config.globalProperties.createNpc = createNpc

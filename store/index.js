@@ -7,7 +7,7 @@ const store = new Vuex.Store({
 	},
 	state:{
 		userInfo:{},
-		system:null
+		system:null,
 	},
 	mutations:{
 		SET_SYSTEM(state,val){
