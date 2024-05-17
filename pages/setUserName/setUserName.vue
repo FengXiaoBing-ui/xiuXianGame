@@ -327,6 +327,7 @@
 					fate:this.fate,
 					qualification:this.qualification,
 					roleSet:this.roleSet,
+					goods:[],
 					grade: {
 						name: "练气一层",
 						healthValue: 20,

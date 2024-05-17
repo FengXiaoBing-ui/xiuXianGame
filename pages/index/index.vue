@@ -39,6 +39,11 @@
 						path:"/pages/index/market"
 					},
 					{
+						name:"修改器",
+						keyName:"market",
+						path:"/pages/modify/modify"
+					},
+					{
 						name:"客栈",
 						keyName:"Inn",
 						path:""

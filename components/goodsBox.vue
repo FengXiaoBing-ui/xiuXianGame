@@ -25,13 +25,21 @@
 			level: {
 				type: Number,
 				default: 1
+			},
+			productId: {
+				type: String
 			}
 		},
 		name: "goodsBox",
 		data() {
 			return {
-				count: 1
+				count: 0
 			};
+		},
+		watch:{
+			count(){
+				this.$emit('productNum',{count:this.count,productId:this.productId})
+			}
 		},
 		methods: {
 			add() {

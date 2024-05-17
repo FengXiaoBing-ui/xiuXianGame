@@ -60,6 +60,14 @@
         		"navigationBarTitleText" : "转世投胎",
         		"enablePullDownRefresh" : false
         	}
+        },
+        {
+        	"path" : "pages/modify/modify",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : "修改器",
+        		"enablePullDownRefresh" : false
+        	}
         }
     ],
 	"globalStyle": {

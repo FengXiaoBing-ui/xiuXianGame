@@ -22,7 +22,7 @@ const panacea = {
 			image:"",
 		},
 		{
-			id:"pellets-100",
+			id:"pellets-101",
 			name:"化淤丹",
 			price:10,
 			grade:1,
@@ -44,7 +44,7 @@ const panacea = {
 			image:"",
 		},
 		{
-			id:"pellets-1000",
+			id:"pellets-1001",
 			name:"回元丹",
 			price:10,
 			grade:1,
@@ -66,7 +66,7 @@ const panacea = {
 			image:"",
 		},
 		{
-			id:"pellets-10000",
+			id:"pellets-10001",
 			name:"炼气撒",
 			price:100,
 			grade:1,
