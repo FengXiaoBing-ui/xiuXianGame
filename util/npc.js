@@ -7,6 +7,7 @@ class createNpc {
 		this.userName = arg.userName;//名字
 		this.qualification = arg.qualification;//资质/修炼速度
 		this.fate = arg.fate;//气运
+		this.goods = arg.goods;//物品
 		
 		this.attribute = arg.attribute
 		this.lingen = arg.lingen

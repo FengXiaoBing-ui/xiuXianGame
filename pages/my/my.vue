@@ -1,6 +1,6 @@
 <template>
 	<view class="content" style="width: 100vw;height: 100vh;">
-		
+		<button @click="clearn">清空缓存</button>
 		<view class="flex flex-wrap bg-white shadow" style="position: absolute;bottom: 0;left: 0;width: 100%;">
 			<view class="margin-xs">姓名：{{ userInfo?.userName }}</view>
 			<view class="margin-xs">血量：{{ userInfo.attribute?.healthValue }}</view>
@@ -30,6 +30,14 @@
 		onLoad() {
 		},
 		methods: {
+			...mapMutations(["SET_USERINFO"]),
+			clearn(){
+				uni.clearStorage()
+				this.SET_USERINFO({})
+				uni.reLaunch({
+					url:"/pages/index/index"
+				})
+			}
 		}
 	}
 </script>

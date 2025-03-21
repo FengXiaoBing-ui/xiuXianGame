@@ -1,27 +1,81 @@
 const city = [
 	{
 		id:"city-100",
-		name:"青云城"
+		name:"青云城",
+		transferTerms:{
+			goodOpinion:50,
+			money:10
+		},
+		market:true,//坊市
+		auction:true,//拍卖会
+		auctionTime:"",//拍卖会时间
+		Inn:true,//客栈
+		task:true,//任务
 	},
 	{
 		id:"city-101",
-		name:"晋阳城"
+		name:"晋阳城",
+		transferTerms:{
+			goodOpinion:50,
+			money:10
+		},
+		market:true,//坊市
+		auction:true,//拍卖会
+		auctionTime:"",//拍卖会时间
+		Inn:true,//客栈
+		task:true,//任务
 	},
 	{
 		id:"city-102",
-		name:"武陵城"
+		name:"武陵城",
+		transferTerms:{
+			goodOpinion:50,
+			money:10
+		},
+		market:true,//坊市
+		auction:true,//拍卖会
+		auctionTime:"",//拍卖会时间
+		Inn:true,//客栈
+		task:true,//任务
 	},
 	{
 		id:"city-103",
-		name:"九剑城"
+		name:"九剑城",
+		transferTerms:{
+			goodOpinion:50,
+			money:10
+		},
+		market:true,//坊市
+		auction:true,//拍卖会
+		auctionTime:"",//拍卖会时间
+		Inn:true,//客栈
+		task:true,//任务
 	},
 	{
 		id:"city-104",
-		name:"三阳城"
+		name:"三阳城",
+		transferTerms:{
+			goodOpinion:50,
+			money:10
+		},
+		market:true,//坊市
+		auction:true,//拍卖会
+		auctionTime:"",//拍卖会时间
+		Inn:true,//客栈
+		task:true,//任务
 	},
 	{
 		id:"city-105",
-		name:"邺城"
+		name:"邺城",
+		transferTerms:{
+			goodOpinion:50,
+			money:10
+		},
+		market:true,//坊市
+		auction:true,//拍卖会
+		auctionTime:"",//拍卖会时间
+		Inn:true,//客栈
+		task:true,//任务
 	}
 ]
 export default city

@@ -80,7 +80,6 @@ export default {
 		...mapMutations("npc", ["SET_NPC_LIST", "MODIFY_NPC_LIST"]),
 		...mapMutations(["SET_USERINFO"]),
 		showWorld() {
-
 		}
 	}
 }

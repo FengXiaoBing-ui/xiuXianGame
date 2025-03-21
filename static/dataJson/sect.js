@@ -2,26 +2,72 @@ const sect = [
 			{
 				id:"S-100",
 				name:"青云宗",
-				childrenCountryuId:["country-100","country-104"],
-				grade:4
+				type:"sect",
+				childrenCountryuId:["country-100","country-101"],
+				grade:4,//等级 1：普通，2：稀有，3：史诗，4：传说，5：神级
+				transferTerms:{
+					goodOpinion:50,
+					money:10
+				},//传送条件 与宗门的关系高于多少且消耗多少灵石才能传送
+				market:false,//坊市
+				auction:false,//拍卖会
+				auctionTime:"",//拍卖会时间
+				Inn:false,//客栈
+				task:false,//任务
+				CangJingGe:true,//藏经阁
+				ZhuDian:true,//主殿
+				ZongMenTask:true,//宗门任务
+				LianDanFang:true,//炼丹房
+				LianQiGe:true,//炼器阁
+				WoDeDongFu:true,//我的洞府
 			},
 			{
 				id:"S-200",
 				name:"万剑门",
-				childrenCountryuId:["country-101"],
-				grade:3
+				type:"sect",
+				childrenCountryuId:["country-102"],
+				grade:3,
+				transferTerms:{
+					goodOpinion:50,
+					money:10
+				},
+				market:true,
+				auction:true,
+				auctionTime:"",
+				Inn:true,
+				task:true
 			},
 			{
 				id:"S-300",
 				name:"药王谷",
-				childrenCountryuId:["country-102"],
-				grade:2
+				type:"sect",
+				childrenCountryuId:["country-103"],
+				grade:2,
+				transferTerms:{
+					goodOpinion:50,
+					money:10
+				},
+				market:true,
+				auction:true,
+				auctionTime:"",
+				Inn:true,
+				task:true
 			},
 			{
 				id:"S-400",
 				name:"百炼宗",
-				childrenCountryuId:["country-103"],
-				grade:1
+				type:"sect",
+				childrenCountryuId:["country-104"],
+				grade:1,
+				transferTerms:{
+					goodOpinion:50,
+					money:10
+				},
+				market:true,
+				auction:true,
+				auctionTime:"",
+				Inn:true,
+				task:true
 			}
 		]
 export default sect
