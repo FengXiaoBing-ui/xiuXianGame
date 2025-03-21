@@ -7,14 +7,14 @@ const grade = [
 				id:1000001,
 				gradeName:"练气一层",
 				attribute:{
-					healthValue:100,
-					energy:20,
-					attackCount:20,
-					defense:20
+					healthValue:100,//增加多少血量
+					energy:20,//增加多少灵力
+					attackCount:20,//增加多少攻击力
+					defense:20//增加多少防御力
 				},
-				condition:{
-					experience:100,
-					panacea:[]
+				condition:{//条件
+					experience:100,//需要经验值
+					panacea:[]//需要什么灵丹才能突破该瓶颈
 				}
 			},
 			{

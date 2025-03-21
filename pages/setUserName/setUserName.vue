@@ -78,6 +78,7 @@
 		mapMutations
 	} from "vuex"
 	import USERSETTING from "@/static/dataJson/uesrSetting.js"
+	import GRADE from "/static/dataJson/grade.js"
 
 	const healthValue = 100; //血量
 	const energy = 100; //法力值
@@ -327,13 +328,7 @@
 					fate:this.fate,
 					qualification:this.qualification,
 					roleSet:this.roleSet,
-					grade: {
-						name: "练气一层",
-						healthValue: 20,
-						energy: 20,
-						attackCount: 20,
-						defense: 20
-					}
+					grade: GRADE[0].child[0]
 				})
 				console.log(player);
 				this.SET_USERINFO(player)

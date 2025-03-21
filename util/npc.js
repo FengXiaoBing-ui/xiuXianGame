@@ -16,6 +16,8 @@ class createNpc {
 		
 		this.sect = arg.sect;//门派
 		this.martialTechnique = arg.martialTechnique;//武技
+
+		this.nowCity = arg.nowCity
 	}
 
 	attack(npc) {

@@ -5,7 +5,7 @@ export default {
     },
     mutations: {
 		SET_NPC_LIST(state,val){
-			state.npcList.push(val)
+			state.npcList = val
 		},
 		MODIFY_NPC_LIST(state,val){
 			state.npcList.forEach((item,index) => {
